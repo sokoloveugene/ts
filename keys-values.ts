@@ -6,7 +6,7 @@ interface IUser {
 
 /**
  * JS pseudocode
- * Object.keys(IUser)
+ * one of Object.keys(IUser)
  */
 type TKeys = keyof IUser;
 
@@ -14,7 +14,7 @@ const field: TKeys = "age";
 
 /**
  * JS pseudocode
- * Object.keys(IUser)
+ * one of Object.values(IUser)
  */
 type TValues = IUser[keyof IUser];
 
