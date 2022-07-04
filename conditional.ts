@@ -9,6 +9,10 @@ interface IHuman {
   age: number;
 }
 
+/**
+ * JS pseudocode
+ * TType instanceof IAnimal ? ... : ...
+ */
 type GetRequiredInformation<TType> = TType extends IAnimal
   ? { nickname: string }
   : { socialSecurityNumber: number };
